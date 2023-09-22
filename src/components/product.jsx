@@ -14,7 +14,14 @@ function Catalogue(props){
             <label>{props.data.price}</label>
             <label>Total</label>
 
+            <div className='prices'>
+                <label>{props.data.price}</label>
+                <label>{props.data.price}</label>
+            </div>
+
             <QuantityPicker/>
+
+            <button className="btn btn-sm btn-success">Add</button>
         </div>
     )
 }

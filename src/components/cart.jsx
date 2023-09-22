@@ -7,3 +7,5 @@ function Cart(){
         <h3>You have too Little Products, Buy More</h3>
     </div>
 }
+
+export default Cart;

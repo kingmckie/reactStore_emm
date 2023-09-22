@@ -5,6 +5,7 @@ import Footer from './components/footer';
 import Home from './components/home';
 import Navbar from './components/navbar';
 import Catalogue from './pages/catalogue';
+import Admin from './components/admin';
 import Cart from './components/cart';
 import "bootstrap/dist/css/bootstrap.min.css";
 import "bootstrap/dist/js/bootstrap.min.js";
@@ -26,6 +27,9 @@ function App() {
         <Route path='/' element={<Home/>} />
         <Route path='/catalogue' element={<Catalogue />} />
         <Route path='/about' element={<About />} />
+        <Route path='/cart' element={<Cart />} />
+        <Route path='/admin' element={<Admin />} />
+        
       </Routes>
       
       <Footer/>

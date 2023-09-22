@@ -1,0 +1,32 @@
+
+
+.admin{
+    background-color: rgb(203, 211, 203);
+}
+.admin h1 {
+    text-align: center;
+    color: darkslategray;
+}
+
+.admin .forms-container {
+    display: flex;
+    padding: 10px 30px;
+}
+.admin .form {
+    flex: 1;
+    max-width: 400px;
+    border: 1px solid grey;
+    padding: 15px 10 px;
+    border-radius: 4px;
+    text-align: left;
+    background-color: white;
+}
+
+.admin .form div {
+        margin-bottom: 10px;
+    }
+
+.admin .form h3 {
+    color: darkcyan
+    text-align
+}
