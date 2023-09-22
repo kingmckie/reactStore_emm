@@ -20,7 +20,7 @@ function Catalogue(props) {
         console.log("filter clicked")
         let list =[];
         for (let i=0; i<products.length; i++) {
-            // missing logic here
+         
         }
     }
 
