@@ -13,7 +13,7 @@ function Product(props) {
 function onQuantityChange(value) {
     console.log('quantity has changed', value);
     setQuantity(value);
-
+}
     
 function getTotal() {
     const total = quantity * props.data.price;

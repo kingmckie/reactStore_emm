@@ -1,4 +1,21 @@
 .navbar{
     color:azure;
     border: 1px solid bisque;
+    background-color: darkgoldenrod;
+}
+
+.navbar .user-info {
+    display: flex;
+    flex-direction: column;
+    color: #333;
+    margin-right: white;
+    border: 1px solid;
+    border-radius: 4px;
+    padding: 5px;
+}
+
+.navbar .user-info {
+    font-size: 20px;
+    color: #333;
+
 }

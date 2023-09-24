@@ -9,8 +9,10 @@ import Admin from './components/admin';
 import Cart from './components/cart';
 import "bootstrap/dist/css/bootstrap.min.css";
 import "bootstrap/dist/js/bootstrap.min.js";
+import "@fortawesome/fontawesome-free/css/all.min.css"
 
 import { BrowserRouter, Routes, Route } from 'react-router-dom'
+import GlobalState from './store/globalState';
 
 
 //create a Product component with a h5 for the title 
@@ -20,6 +22,7 @@ import { BrowserRouter, Routes, Route } from 'react-router-dom'
 function App() {
   return (
     <div className="App">
+     <GlobalState>
      <BrowserRouter>
       <Navbar/>
       
@@ -34,6 +37,8 @@ function App() {
       
       <Footer/>
      </BrowserRouter>
+
+     </GlobalState>
     </div>
   );
 }
