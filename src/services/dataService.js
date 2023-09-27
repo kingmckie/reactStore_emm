@@ -1,21 +1,21 @@
 var catalogue = [
     {
         "title": "Big Cucumber",
-        "category": "fruits",
+        "category": "grocery",
         "price": 12.99,
         "image": "Cucumber.jpg",
         "_id": "1"
     },
     {
         "title": "mangoes",
-        "category": "fruit",
+        "category": "grocery",
         "price": 1.99,
         "image": "Mangoes.jpg",
         "_id": "2"
     },
     {
         "title": "strawberry",
-        "category": "fruit",
+        "category": "grocery",
         "price": 2.99,
         "image": "Strawberry.jpg",
         "_id": "3"
@@ -29,52 +29,59 @@ var catalogue = [
     },
     {
         "title": "Potatoes",
-        "category": "vegetable",
+        "category": "grocery",
         "price": 3.99,
         "image": "Potatoes.jpg",
         "_id": "5"
     },
     {
-        "title": "strawberry",
-        "category": "motorcyle",
-        "price": 2.99,
-        "image": "Strawberry.jpg",
+        "title": "ammo",
+        "category": "guns and ammo",
+        "price": 1200.00,
+        "image": "Ammunition.jpg",
         "_id": "6"
     },
     {
-        "title": "watermelon",
-        "category": "motorcyle",
-        "price": 3.99,
-        "image": "Watermelon.jpg",
+        "title": "Classic Guns",
+        "category": "guns and ammo",
+        "price": 1500.00,
+        "image": "Classic Guns.jpeg",
         "_id": "7"
     },
     {
-        "title": "Potatoes",
-        "category": "motorcyle",
+        "title": "chick on bikes",
+        "category": "chick on bikes",
         "price": 3.99,
-        "image": "Potatoes.jpg",
+        "image": "chick on Bike.jpeg",
         "_id": "8"
     },
     {
-        "title": "strawberry",
-        "category": "guns and ammo",
+        "title": "Chick on Dirtbike",
+        "category": "chick on Bikes",
         "price": 2.99,
-        "image": "Strawberry.jpg",
+        "image": "chick on dirtbike.jpg",
         "_id": "9"
     },
     {
-        "title": "watermelon",
+        "title": "Scuds",
         "category": "guns and ammo",
         "price": 3.99,
-        "image": "Watermelon.jpg",
+        "image": "Missile.jpeg",
         "_id": "10"
     },
     {
-        "title": "Potatoes",
+        "title": "Sir Gatlin",
         "category": "guns and ammo",
-        "price": 3.99,
-        "image": "Potatoes.jpg",
+        "price": 30000,
+        "image": "Sir Gatlin.jpeg",
         "_id": "11"
+    },
+    {
+        "title": "Cake",
+        "category": "grocery",
+        "price": 3.99,
+        "image": "Cake.jpg",
+        "_id": "12"
     }
 
 ];

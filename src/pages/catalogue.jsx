@@ -15,13 +15,18 @@ function Catalogue(props) {
         
     },[]);
 
-    function filter(category)
-    {
+    function filter(category) {
         console.log("filter clicked")
+        console.log(category)
         let list =[];
         for (let i=0; i<products.length; i++) {
-         
+            if(products[i].category === category){
+                list.push(products[i])
+            }
         }
+        console.log(list)
+        setProdsDisplay(list);
+    
     }
 
     function loadCatalogue(){
@@ -35,6 +40,8 @@ function Catalogue(props) {
     }
 
     function clearFilter() {
+        console.log("clear")
+        setProdsDisplay(products);
         
     }
 
@@ -45,10 +52,11 @@ function Catalogue(props) {
             <h1> Check out our {products.length} new Products</h1>
             <br/>
             <button onClick={clearFilter} className="btn btn-dark btn-filter">ALL</button>
-            {categories.map(c => <button key={c} className="btn btn-sm btn-primary btn-filter">{c}</button>)}
+            {categories.map(c =>(
+             <button key={c} onClick={()=>filter(c)} className="btn btn-sm btn-primary btn-filter">{c}</button>))}
             <br/>
             <div>
-             {products.map(p=> <Product key={p._id} data={p}/>)}   
+             {productToDisplay.map(p=> <Product key={p._id} data={p}/>)}   
             </div>
             
          

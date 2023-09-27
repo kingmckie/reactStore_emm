@@ -1,10 +1,13 @@
 import"./product.css";
 import QuantityPicker from "./quantityPicker";
-import { useEffect, useState } from "react";
+import { useContext, useEffect, useState } from "react";
 import DataService from "../services/dataService";
+import storeContext from "../store/storeContext";
 
 function Product(props) {
     const [quantity, setQuantity] = useState(1);
+
+    const addProductToCart = useContext(storeContext).addProductToCart;
 
     useEffect(function (){
         console.log('component loaded');
@@ -21,7 +24,10 @@ function getTotal() {
 }
 
 function handleAdd() {
-    console.log("a message")
+    let prodForCart = {...props.data};
+    prodForCart.quantity = quantity;
+
+    addProductToCart(prodForCart);
 }
 
     return(
@@ -40,9 +46,16 @@ function handleAdd() {
 
             <QuantityPicker onChange={onQuantityChange}/>
 
-            <button className="btn btn-sm btn-success">Add</button>
-            <button onClick={handleAdd} className="btn btn-sm btn-success">Add</button>       
+            
+            <button onClick={handleAdd} className="btn btn-sm btn-success mt-1">Add</button>       
          </div>
     );
 }
 export default Product;
+
+/**create CartProduct component
+ * cart should render to CartProduct instead of li
+ *              -should pass data
+ * CartProduct should receive props
+ * and render the information
+ */

@@ -1,13 +1,24 @@
 
 
 .cart {
-
+    background-color: #f9f9f9; 
+    border: 1px solid #ddd; 
+    padding: 20px; 
+    border-radius: 5px; 
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); 
 }
 
-.cart h1{
-    color: darkgreen;
-}
 
-.cart h3{
-    color: darkcyan;
+.cart h1 {
+    color: darkgreen; 
+    font-size: 24px; 
+    margin-bottom: 10px;
+
+}
+.cart h3 {
+    color: darkcyan; 
+    font-size: 18px; 
+    margin-top: 0; 
+    margin-bottom: 20px; 
+
 }
